@@ -1,5 +1,5 @@
 .intro-section{
-  height: 100vh;
+  height: 80vh;
   background-color: #0d4c88;
   color: #fff;
   display: flex;
@@ -126,22 +126,19 @@
 }
 
 .single-artist{
-  width: 90%;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 12px;
-  margin: 20px auto;
-  height: 425px;
-  text-align: center;
+  cursor: pointer;
 }
 
 .single-artist img{
   width: 100%;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 0px 0px 12px;
 }
 
 .single-artist h3{
-  padding: 15px;
-  margin-bottom: 0px; 
+ font-size: 20px;
 }
 
 
@@ -161,7 +158,7 @@
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 3px;
-  border-bottom: 3px solid gray;
+  border-bottom: 2px solid #c8c6c6;
 }
 
 .single-event .detail-head{
@@ -174,7 +171,10 @@
   font-size: 16px;
 }
 
-
+.back-link{
+  color: #1269ba;
+  cursor: pointer;
+}
 
 /*---- Page Not Found ----*/
 
@@ -197,4 +197,28 @@
 
 .page-not-found .home-link{
   color: #0059fc;
+}
+
+
+/*---- Mobile Responsive ----*/
+
+@media only screen and (max-width: 800px) {
+  .intro-section{
+    height: 50vh;
+  }
+  
+  .intro-section h1{
+    font-size: 22px;
+  }
+  
+  
+  .intro-section h2{
+    font-size: 18px;
+  }
+
+  .intro-input button{
+    padding: 11px 30px;
+    min-width: 90px;
+  }
+  
 }
